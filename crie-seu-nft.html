@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Crie seu NFT - BlueBed</title>
+    <meta type="desc" content="Descrição do Site">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f37979e02d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/crie-seu-nft.css">
+    
+
+    <link rel="icon" href="./assets/img/bluebed-logo-placeholder-e1647624714802.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="home">
+                <img src="./assets/img/bluebed-logo-placeholder-e1647624714802.png" alt="Logo BlueBed" class="logo-main">
+            </a>
+            <div class="navbar-pesquisa">
+                <form action="" class="navbar-pesquisa">
+                    <input type="search" placeholder="Pesquisar itens, coleções e contas" class="input-pesquisa">
+                    <input type="submit"  value="search" class="botao-pesquisa material-icons">
+                </form>
+            </div>
+            <div class="navbar-menu">
+                <a href="explorar.html" class="menu-links">
+                    <p class="menu-links-nome">Explorar</p>
+                </a>
+                <a href="crie-seu-nft.html" class="menu-links">
+                    <p class="menu-links-nome">Crie seu NFT</p>
+                </a>
+                <a href="sobre.html" class="menu-links">
+                    <p class="menu-links-nome">Sobre Nós</p>
+                </a>
+                <a href="minha-conta.html" class="menu-links">
+                    <i class="minha-conta fa-solid fa-user"></i>
+                </a>
+                <a href="#" class="menu-links">
+                    <i class="sync fa-solid fa-wallet"></i>
+                </a>
+            </div>
+        </div>    
+    </header>
+    <main>
+        <section class="nft">
+            <div class="crie-nft">
+                <form action="" class="crie-nft" method="post" name="new-nft">
+                    <label for="nft-image">Imagem do NFT</label>
+                    <input type="file" accept="image/*" placeholder="Imagem" id="nft-image" class="input-image-nft" required>
+                    <label for="nft-name">Nome do NFT</label>
+                    <input type="text" placeholder="Nome do NFT" id="nft-name" class="input-nome-nft" required>
+                    <label for="nft-colecao">Nome da Coleção (Se houver)</label>
+                    <input type="text" placeholder="Nome da Coleção" id="nft-colecao" class="input-colecao-nft" required>
+                    <label for="nft-valor">Valor em MATIC</label>
+                    <input type="number" placeholder="Valor em MATIC" id="nft-valor" class="input-valor-nft"required>
+                    <label for="nft-desc">Descrição da arte</label>
+                    <input type="text" placeholder="Descrição da Arte" maxlenght="400" id="nft-desc" class="input-desc-nft">
+                    <label for="nft-obras">Quantidade de cópias</label>
+                    <input type="number" placeholder="Quantidade de Obras" id="nft-obras" class="input-n-obras-nft">
+                    <label for="nft-royalties">Royalties (entre 0 e 10)</label>
+                    <input type="number" placeholder="Royalties em %"  id="nft-royalties" min="0" max="10" class="input-royalties-nft" required>
+                    <input type="submit" placeholder="Criar NFT" class="criar-nft" value="Criar NFT">
+                </form>
+            </div>
+            
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="rodape">
+        <div class="menu-redes">
+            <a class="twitter icone-contatos" href="https://www.twitter.com/bluebed_io" target="_blank">
+                <i class="redes-sociais fa-brands fa-twitter-square"></i>
+            </a>   
+            <a class="linkedin icone-contatos" href="https://www.linkedin.com/company/bluebed" target="_blank">
+                <i class="redes-sociais fa-brands fa-linkedin"></i>
+            </a>   
+            <a class="instagram icone-contatos" href="https://www.instagram.com/bluebed.io" target="_blank">
+                <i class="redes-sociais fa-brands fa-instagram"></i>
+            </a>   
+            <a class="discord icone-contatos" href="https://www.discord.gg/AHR7k6HNCx" target="_blank">
+                <i class="redes-sociais fa-brands fa-discord"></i>
+            </a>   
+            <a class="reddit icone-contatos" href="https://www.reddit.com/user/bluebed_io" target="_blank">
+                <i class="redes-sociais fa-brands fa-reddit-square"></i>
+            </a>   
+            <a class="youtube icone-contatos" href="https://www.tiktok.com/@bluebed.io" target="_blank">
+                <i class="redes-sociais fa-brands fa-tiktok"></i>
+            </a>   
+            <a class="mail icone-contatos" href="bluebedcompany@gmail.com" target="_blank">
+                <i class="redes-sociais fa-solid fa-envelope"></i>
+            </a>    
+        </div>
+        <div class="nav-rodape">   
+            <a href="explorar.html" class="footer-navbar">
+                <p class="navbar-nome">Explorar</p>
+            </a><a href="crie-seu-nft.html" class="footer-navbar">
+                <p class="navbar-nome">Crie Seu NFT</p>
+            </a><a href="sobre-nos.html" class="footer-navbar">
+                <p class="navbar-nome">Sobre Nós</p>
+            </a>
+        </div>
+        <div class="container-copyright">
+            <p class="copyright">Copyright</p>
+            <a href="index.html"><img class="footer-img" src="./assets/img/logo branca.png"></a>
+        </div> 
+    </div>
+</footer>
+
+</html>
